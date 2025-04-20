@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "module": "Node16",
+    "target": "es2022",
+    "typeRoots": ["node_modules/@types"],
+    "declaration": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*.ts", "src/remark-insert-headings.spec.mts"],
+  "exclude": ["./dist", "./test", "__scripts__", "**/*.spec.ts"]
+}
