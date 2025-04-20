@@ -1,0 +1,40 @@
+{
+  "name": "remark-insert-headings",
+  "version": "0.0.0",
+  "description": "A remark plugin that automatically inserts one or more specified headings into a Markdown document if they are not already present.",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "toc": "node ./__scripts__/toc.js",
+    "lint": "eslint ./src",
+    "prepublishOnly": "npm run lint && npm run build && npm run test",
+    "fixtures": "npm run build && rm -rf ./test/fixtures/out && node ./test/fixtures/examples.js",
+    "test": "node ./test/index.mjs",
+    "test:update": "npm run fixtures && npm run test",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "keywords": [
+    "remark-plugin",
+    "headings"
+  ],
+  "author": "Tom Grey",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "eslint": "^9.25.0",
+    "prettier": "^3.5.3",
+    "remark": "^15.0.1",
+    "remark-license": "^6.1.0",
+    "remark-toc": "^9.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  },
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  }
+}
