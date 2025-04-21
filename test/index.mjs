@@ -9,6 +9,9 @@ import getExample3 from './fixtures/example-3.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/**
+ * Asserts that the output of the example function matches the expected output.
+ */
 async function assertExample(example, outputFile) {
   const output = await fs.readFile(
     path.join(__dirname, `../test/fixtures/out/${outputFile}`),
