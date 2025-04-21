@@ -20,7 +20,9 @@
   },
   "keywords": [
     "remark-plugin",
-    "headings"
+    "remark",
+    "headings",
+    "toc"
   ],
   "author": "Tom Grey",
   "license": "MIT",
