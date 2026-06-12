@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+## 1.0.0 (2025-04-21)
 
-## 0.0.0 (2024-46-21)
+### Features
 
-Initial plugin version.
+* initial plugin version ([427420a](https://github.com/tgreyuk/remark-insert-headings/commit/427420aa9eff1adc31624efd5d2221749e03ed43))
