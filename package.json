@@ -2,6 +2,10 @@
   "name": "remark-insert-headings",
   "version": "0.0.0",
   "description": "A remark plugin that automatically inserts one or more specified headings into a Markdown document if they are not already present.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgreyuk/remark-insert-headings.git"
+  },
   "type": "module",
   "exports": {
     ".": "./dist/index.js"
