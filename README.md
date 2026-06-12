@@ -145,7 +145,7 @@ Each field supports the following:
 - `position` (`"start"`|`"end"`) — Where to insert the heading:
   - `"start"`: after the first paragraph but before the next heading.
   - `"end"`: at the end of the document.
-- `minHeadingCount` (`number`, default `0`) - Only insert the heading if the document contains fewer than this number of headings.
+- `minHeadingCount` (`number`, default `0`) — Only insert the heading if the document contains more than this number of headings of depth 2.
 
 ## Related
 
